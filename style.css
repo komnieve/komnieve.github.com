@@ -25,7 +25,15 @@ body, html {
     z-index: -1; /* Ensures the background is behind everything else */
 }
 
-
+.character {
+    position: absolute;
+    bottom: 5%; /* Adjust this value to position the character vertically */
+    left: 50%; /* Adjust this value to position the character horizontally */
+    transform: translateX(-50%); /* Shift the character left by half its width */
+    width: 250px; /* Adjust the size of your character */
+    height: auto;
+    z-index: 10; /* Ensures the character is above the background */
+}
 
 
 #pane1 {
