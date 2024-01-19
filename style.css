@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.pane {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Needed for absolute positioning of images */
+    overflow: hidden; /* Ensures no scrolling within the pane */
+    scroll-snap-align: start;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures background covers the pane */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures the background is behind everything else */
+}
+
+
+
+
+#pane1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('/images/panel_1_background.png') no-repeat center center;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+
+#pane2 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('/images/panel_2_background.png') no-repeat center center;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+#pane3 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('/images/panel_3_background.png') no-repeat center center;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+#pane4 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('/images/panel_4_background.png') no-repeat center center;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 20px;
+}
